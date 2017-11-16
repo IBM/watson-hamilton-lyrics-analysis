@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>Ziggy | Bowie Persona comparison using Twitter</title>
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <meta name="keywords" content="bowie, david-bowie, ziggy-stardust, lazarus, thin-white-duke, major-tom, big-5, psychology-in-music">
+  <meta name="description" content="Psychology Analysis of David Bowies Lyrics">
+</head>
+
+<body class="ziggy comparison">
+  <div class="compare">
+    <!--        <div class="trim"></div>-->
+    <div class="bar">
+      <a href="../">
+        <div class="title">
+          <img class="blackstar" src="./images/bs.png">
+        </div>
+      </a>
+    </div>
+  </div>
+  <div id="stage" class="stage">
+  </div>
+  <div class='twitter'>
+
+    <form class="twitterIdEntry" action="javascript:renderBowie()" method="get">
+      <div class="twitterInput">
+        <div class="at">@</div>
+        <input id="twitterForm" class="inputField" type="text" name="FirstName" placeholder="Twitter ID">
+        <div class="butt"></div>
+      </div>
+    </form>
+  </div>
+</body>
+<script src="./javascript/Chart.min.js"></script>
+<script src="./javascript/persona.js"></script>
+<script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-74566000-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</html>
+<html>

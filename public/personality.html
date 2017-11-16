@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <title>Hamilton Character Personas | Big Five Psychology | Hamilton Lyric Analysis</title>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/main.css" />
+
+  <link rel="stylesheet" type="text/css" href="./stylesheets/personality.css" />
+  <meta name="keywords" content="bowie, david-bowie, ziggy-stardust, lazarus, thin-white-duke, major-tom, big-5, psychology-in-music">
+  <meta name="description" content="Psychology Analysis of David Bowies Lyrics">
+</head>
+
+
+<body class="ziggy" background="images/parchment.jpg" onload="init()">
+  <div class="compare">
+    <!--        <div class="trim"></div>-->
+    <div class="bar">
+      <a href="../">
+        <div class="title">
+          <img class="hamilton" src="./images/hamiltonlogo.svg">
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class='charts'>
+    <div class="context">
+      <div class="personabox">
+        <div class="drawing">
+
+          <img id="characterImage" class="personaimage" src="">
+        </div>
+        <div class="assessment">
+          <div id="characterName" class="personaTitle"></div>
+          <div id="consumption" class="assessmentInfo">
+            <ul id="consumptionList" class="consumptionList">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="./javascript/personality.js"></script>
+<script>
+  ! function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + '://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  }(document, 'script', 'twitter-wjs');
+</script>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=649194155220548 ";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+</html>

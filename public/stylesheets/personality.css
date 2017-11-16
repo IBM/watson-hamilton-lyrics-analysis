@@ -1,0 +1,33 @@
+.drawing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.personabox {
+  display: flex;
+  flex-direction: row;
+}
+
+.personaimage {}
+
+.assessment {
+  width: 400px;
+}
+
+.assessmentList {
+  margin: 10px;
+  list-style-type: none;
+}
+
+.consumptionList {
+  -webkit-padding-start: 0;
+}
+
+.personaTitle {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

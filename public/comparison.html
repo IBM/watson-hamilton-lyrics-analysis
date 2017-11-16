@@ -1,0 +1,146 @@
+<html>
+
+<head>
+  <title>Psychology comparison of Hamilton characters | Big Five Psychology</title>
+  <!--    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>-->
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <meta name="keywords" content="bowie, david-bowie, ziggy-stardust, lazarus, thin-white-duke, major-tom, big-5, psychology-in-music">
+  <meta name="description" content="Pshychological Analysis of David Bowies Lyrics">
+</head>
+
+<body class="ziggy" background="images/parchment.jpg">
+  <div class="compare">
+    <!--        <div class="trim"></div>-->
+    <div class="bar">
+      <a href="../">
+        <div class="title">
+          <img class="hamilton" src="./images/hamiltonlogo.svg">
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class='charts'>
+    <div class="context">
+      <!-- <div class="chartinfo">
+        <p>These charts plot the <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/personality-insights.html">big five personality traits</a> from the lyrics of albums related to <a href="https://en.wikipedia.org/wiki/David_Bowie">David Bowie's personas</a>          over time. There is one card for each trait, and a picker within each card that allows comparison of contributing factors. You can toggle between viewing the data by persona, or by time.
+          <p>You can add your own thoughts below.</p>
+      </div> -->
+      <!-- <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="onoffswitch1" checked="" on onchange="toggleChart(this)">
+        <label class="onoffswitch-label" for="onoffswitch1">
+                    <div class="onoffswitch-inner"></div>
+
+                    <span class="onoffswitch-switch"></span></label>
+      </div> -->
+    </div>
+  </div>
+  <div class='charts'>
+    <div class='chart'>
+      <div class="chartTitle"><img class="chartIcon" src="images/bigfive/openness.svg">Openness</div>
+      <div class="explanation">Appreciation for art, emotion, adventure, unusual ideas, curiosity, and variety of experience. It reflects the degree of intellectual curiosity, creativity and a preference for novelty and variety a person has. It is also described as the extent
+        to which a person is imaginative or independent, and depicts a personal preference for a variety of activities over a strict routine.</div>
+      <div class="chartContent" id='openness'></div>
+      <select class="chartSelect" id='openness-select' onchange="opennessTrait()">
+                <option value="combined">Combined</option>
+            </select>
+    </div>
+    <div class='chart'>
+      <div class="chartTitle"><img class="chartIcon" src="images/bigfive/conscientiousness.svg">Conscientiousness</div>
+      <div class="explanation">A tendency to be organized and dependable, show self-discipline, act dutifully, aim for achievement, and prefer planned rather than spontaneous behavior. High conscientiousness are often perceived as stubborn and obsessive. Low conscientiousness
+        are flexible and spontaneous, but can be perceived as sloppy and unreliable.</div>
+      <div class="chartContent" id='conscientiousness'>
+      </div>
+      <select class="chartSelect" id='conscientiousness-select' onchange="conscientiousnessTrait()">
+                <option value="combined">Combined</option>
+            </select>
+    </div>
+    <div class='chart'>
+      <div class="chartTitle"><img class="chartIcon" src="images/bigfive/agreeableness.svg">Agreeableness</div>
+      <div class="explanation">A tendency to be compassionate and cooperative rather than suspicious and antagonistic towards others. It is also a measure of one's trusting and helpful nature, and whether a person is generally well-tempered or not. High agreeableness is often
+        seen as naive or submissive. Low agreeableness personalities are often competitive or challenging people, which can be seen as argumentative or untrustworthy.</div>
+      <div class="chartContent" id='agreeableness'></div>
+      <select class="chartSelect" id='agreeableness-select' onchange="agreeablenessTrait()">
+                <option value="combined">Combined</option>
+            </select>
+    </div>
+    <div class='chart'>
+      <div class="chartTitle"><img class="chartIcon" src="images/bigfive/extraversion.svg">Extraversion</div>
+      <div class="explanation">Energy, positive emotions, surgency, assertiveness, sociability and the tendency to seek stimulation in the company of others, and talkativeness. High extraversion is often perceived as attention-seeking, and domineering. Low extraversion causes
+        a reserved, reflective personality, which can be perceived as aloof or self-absorbed.</div>
+      <div class="chartContent" id='extraversion'></div>
+      <select class="chartSelect" id='extraversion-select' onchange="extraversionTrait()">
+                <option value="combined">Combined</option>
+            </select>
+    </div>
+    <div class='chart'>
+      <div class="chartTitle "><img class="chartIcon " src="images/bigfive/neuroticism.svg ">Neuroticism</div>
+      <div class="explanation">The tendency to experience unpleasant emotions easily, such as anger, anxiety, depression, and vulnerability. Neuroticism also refers to the degree of emotional stability and impulse control and is sometimes referred to by its low pole, "emotional
+        stability". A high need for stability manifests as a stable and calm personality, but can be seen as uninspiring and unconcerned. A low need for stability causes a reactive and excitable personality, often very dynamic individuals, but they can
+        be perceived as unstable or insecure.</div>
+      <div class="chartContent " id='neuroticism'></div>
+      <select class="chartSelect " id='neuroticism-select' onchange="neuroticismTrait()">
+                <option value="combined">Combined</option>
+            </select>
+    </div>
+  </div>
+  <div class='charts'>
+    <div class="context">
+      <div class="chartinfo">
+        <div id="disqus_thread" class="disqus"></div>
+        <script>
+          /**
+           * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+           * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+           */
+          /*
+          var disqus_config = function () {
+          this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          */
+          (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document,
+              s = d.createElement('script');
+
+            s.src = '//ziggy-bluemix.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      </div>
+    </div>
+  </div>
+  <!--
+   <div class="footer ">
+    <div class="footer-container ">
+        <div><img class="watson " src="static/images/watson-logo.png "></div>
+        <div class="baseline ">BUILT ON IBM BLUEMIX</div>
+        <div><img class="bluemix " src="static/images/bluemix-logo.png "></div>
+    </div>
+</div>
+-->
+</body>
+<script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-74566000-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script src="./javascript/Chart.min.js "></script>
+
+<script src="./javascript/comparison.js "></script>
+
+</html>
+<html>
