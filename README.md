@@ -1,5 +1,5 @@
 
-# [Watson Personality Insights of Hamilton Musical Lyrics]
+# Watson Personality Insights of Hamilton Musical Lyrics
 In this developer journey, we will create an app that compares personality traits of characters from the musical 'Hamilton' using Watson Personality Insights, Node JS, HTML, JS and CSS.
 
 ![](/design/hamilton-characters.png)
@@ -15,7 +15,7 @@ When the reader has completed this journey, they will understand how to:
 
 ## Flow
 
-1. Step 1.
+1.
 2. Step 2.
 3. Step 3.
 4. Step 4.
