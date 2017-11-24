@@ -319,26 +319,11 @@ function readCombinedData() {
 }
 
 function readPersonaData() {
-  var url = './personas.json';
 
-  var xmlhttp = new XMLHttpRequest();
 
-  xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-      var data = JSON.parse(xmlhttp.responseText);
-
-      data.results.forEach(function(persona) {
-        personas[persona.key] = persona;
-      });
-
-      console.log(data);
 
       readCombinedData();
-    }
-  };
 
-  xmlhttp.open("GET", url, true);
-  xmlhttp.send();
 }
 
 function opennessTrait(e) {
@@ -387,5 +372,5 @@ function neuroticismTrait(e) {
 }
 
 window.onload = function() {
-  readPersonaData();
+  readCombinedData();
 }
