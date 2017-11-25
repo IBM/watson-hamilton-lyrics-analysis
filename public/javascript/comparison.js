@@ -66,7 +66,7 @@ function process(persona, factor, collection) {
   factor.children.forEach(function(trait) {
 
     var traitdata = {
-      'name': persona.title,
+      'name': persona.character,
       // 'year': personas[persona.data.id].start,
       'value': trait.percentile.toFixed(2) * 100
     };
@@ -81,7 +81,7 @@ if(  subfactors[trait.name] != undefined ){
   })
 
   var data = {
-    'name': persona.title,
+    'name': persona.character,
     // 'year': personas[persona.data.id].start,
     'value': value
   };
