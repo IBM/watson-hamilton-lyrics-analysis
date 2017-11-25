@@ -66,7 +66,7 @@ function process(persona, factor, collection) {
   factor.children.forEach(function(trait) {
 
     var traitdata = {
-      'name': persona.character,
+      'name': persona.title,
       // 'year': personas[persona.data.id].start,
       'value': trait.percentile.toFixed(2) * 100
     };
@@ -81,7 +81,7 @@ if(  subfactors[trait.name] != undefined ){
   })
 
   var data = {
-    'name': persona.character,
+    'name': persona.title,
     // 'year': personas[persona.data.id].start,
     'value': value
   };
@@ -242,7 +242,7 @@ function buildPicker(factor) {
 
       case "Emotional range":
         var select = document.getElementById('neuroticism-select');
-        addOption(select, name.id);
+        addOption(select, name.name);
         break;
     }
   })
@@ -319,11 +319,25 @@ function readCombinedData() {
 }
 
 function readPersonaData() {
+  var url = './personas.json';
 
+  var xmlhttp = new XMLHttpRequest();
 
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      var data = JSON.parse(xmlhttp.responseText);
 
+      data.results.forEach(function(persona) {
+        personas[persona.key] = persona;
+      });
+
+      console.log(data);
       readCombinedData();
+    }
+  };
 
+  xmlhttp.open("GET", url, true);
+  xmlhttp.send();
 }
 
 function opennessTrait(e) {
