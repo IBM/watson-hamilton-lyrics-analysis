@@ -63,17 +63,29 @@ function basicLineChart(color) {
         pointHighlightFill: "#fff",
         pointHighlightStroke: makeRGB(color, 1),
         backgroundColor: [
-          'rgba(153, 215, 222, 0.8)',
-          'rgba(87, 140, 169, 0.8)',
-          'rgba(244, 81, 44, 0.8)',
-          'rgba(206, 49, 117, 0.8)',
-          'rgba(90, 114, 71, 0.8)',
-          'rgba(14, 76, 139, 0.8)',
-          'rgba(207, 176, 149, 0.8)',
-          'rgba(103, 88, 74, 0.8)',
-          'rgba(135, 175, 74, 0.8)',
-          'rgba(247, 209, 209, 0.8)',
-          'rgba(243, 207, 85, 0.8)'
+          'rgba(153, 215, 222, 0.9)',
+          'rgba(87, 140, 169, 0.9)',
+          'rgba(244, 81, 44, 0.9)',
+          'rgba(206, 49, 117, 0.9)',
+          'rgba(90, 114, 71, 0.9)',
+          'rgba(14, 76, 139, 0.9)',
+          'rgba(207, 176, 149, 0.9)',
+          'rgba(103, 88, 74, 0.9)',
+          'rgba(135, 175, 74,0.9)',
+          'rgba(247, 209, 209, 0.9)',
+          'rgba(243, 207, 85, 0.9)'
+
+      //     'rgba(244, 81, 44, 0.5)',
+      //   'rgba(244, 81, 44, 0.5)',
+      //   'rgba(244, 81, 44, 0.5)',
+      //   'rgba(244, 81, 44, 0.5)',
+      //   'rgba(244, 81, 44, 0.5)',
+      //   'rgba(244, 81, 44, 0.5)',
+      //   'rgba(244, 81, 44, 0.5)',
+      //   'rgba(244, 81, 44, 0.5)',
+      //   'rgba(244, 81, 44, 0.5)',
+      //   'rgba(244, 81, 44, 0.5)',
+      // 'rgba(244, 81, 44, 0.5)'
         ]
 
       }
@@ -233,7 +245,8 @@ function addChart(anchor, data) {
             {
               ticks: {
                 beginAtZero: true,
-                fontSize: 10,
+                fontSize: 11,
+                fontColor: "black",
                 max: 100,
                 min: 0
               }
@@ -243,7 +256,8 @@ function addChart(anchor, data) {
             {
               ticks: {
                 autoSkip: false,
-                fontSize: 10
+                fontColor: "black",
+                fontSize: 11
               }
             }
           ]
