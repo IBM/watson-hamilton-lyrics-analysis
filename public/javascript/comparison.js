@@ -50,6 +50,8 @@ function makeRGB(color, opacity) {
 
 function basicLineChart(color) {
 
+  var opacity = 0.8;
+
   var lineChartData = {
     datasets: [
       {
@@ -59,7 +61,20 @@ function basicLineChart(color) {
         pointColor: makeRGB(color, 1),
         pointStrokeColor: "#fff",
         pointHighlightFill: "#fff",
-        pointHighlightStroke: makeRGB(color, 1)
+        pointHighlightStroke: makeRGB(color, 1),
+        backgroundColor: [
+          'rgba(153, 215, 222, 0.8)',
+          'rgba(87, 140, 169, 0.8)',
+          'rgba(244, 81, 44, 0.8)',
+          'rgba(206, 49, 117, 0.8)',
+          'rgba(90, 114, 71, 0.8)',
+          'rgba(14, 76, 139, 0.8)',
+          'rgba(207, 176, 149, 0.8)',
+          'rgba(103, 88, 74, 0.8)',
+          'rgba(135, 175, 74, 0.8)',
+          'rgba(247, 209, 209, 0.8)',
+          'rgba(243, 207, 85, 0.8)'
+        ]
 
       }
     ]
@@ -205,49 +220,12 @@ function addChart(anchor, data) {
     });
   } else {
 
-    // var myLineChart = new Chart(ctx, {
-    //     type: 'line',
-    //     data: data,
-    //     options: options
-    // });
-
-    /* var myLineChart = new Chart(ctx, {
-    type: 'line',
-    data: data,
-    options: options
-});*/
-
-    // data =  {
-    //     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-    //     datasets: [{
-    //         label: '# of Votes',
-    //         data: [12, 19, 3, 5, 2, 3],
-    //         backgroundColor: [
-    //             'rgba(255, 99, 132, 0.2)',
-    //             'rgba(54, 162, 235, 0.2)',
-    //             'rgba(255, 206, 86, 0.2)',
-    //             'rgba(75, 192, 192, 0.2)',
-    //             'rgba(153, 102, 255, 0.2)',
-    //             'rgba(255, 159, 64, 0.2)'
-    //         ],
-    //         borderColor: [
-    //             'rgba(255,99,132,1)',
-    //             'rgba(54, 162, 235, 1)',
-    //             'rgba(255, 206, 86, 1)',
-    //             'rgba(75, 192, 192, 1)',
-    //             'rgba(153, 102, 255, 1)',
-    //             'rgba(255, 159, 64, 1)'
-    //         ],
-    //         borderWidth: 1
-    //     }]
-    // }
-
     var chart = new Chart(ctx, {
       type: 'bar',
       data: data,
       options: {
         legend: {
-           display: false
+          display: false
         },
         scaleShowValues: true,
         scales: {
@@ -257,7 +235,7 @@ function addChart(anchor, data) {
                 beginAtZero: true,
                 fontSize: 10,
                 max: 100,
-                         min: 0
+                min: 0
               }
             }
           ],
