@@ -10,13 +10,13 @@ var blue = [1, 79, 131];
 var yellow = [249, 223, 60];
 var orange = [255, 199, 102]; // [243, 119, 107];
 
-var black = [0,0,0];
+var black = [0, 0, 0];
 
 var blue = [14, 76, 139];
 
 var magenta = [144, 34, 81];
 
-var orange = [244,81, 44];
+var orange = [244, 81, 44];
 
 var openness = [];
 var conscientiousness = [];
@@ -79,13 +79,12 @@ function process(persona, factor, collection) {
       'value': trait.percentile.toFixed(2) * 100
     };
 
-console.log('trait.name: ' + trait.name);
-console.log('traitdata: ' + traitdata);
+    console.log('trait.name: ' + trait.name);
+    console.log('traitdata: ' + traitdata);
 
-if(  subfactors[trait.name] != undefined ){
-
-    subfactors[trait.name].push(traitdata);
-  }
+    if (subfactors[trait.name] != undefined) {
+      subfactors[trait.name].push(traitdata);
+    }
   })
 
   var data = {
@@ -172,39 +171,106 @@ function addChart(anchor, data) {
       scaleStepWidth: 10,
       scaleStartValue: 0,
       scaleShowVerticalLines: false
-    },{options: {
+    }, {
+      options: {
         legend: {
-            labels: {
-                fontColor: "white",
-                fontSize: 18
-            }
+          labels: {
+            fontColor: "white",
+            fontSize: 18
+          }
         },
         scales: {
-            yAxes: [{
-                ticks: {
-                    fontColor: "white",
-                    fontSize: 18,
-                    stepSize: 1,
-                    beginAtZero: true
-                }
-            }],
-            xAxes: [{
-                ticks: {
-                    fontColor: "white",
-                    fontSize: 14,
-                    stepSize: 1,
-                    beginAtZero: true
-                }
-            }]
+          yAxes: [
+            {
+              ticks: {
+                fontColor: "white",
+                fontSize: 18,
+                stepSize: 1,
+                beginAtZero: true
+              }
+            }
+          ],
+          xAxes: [
+            {
+              ticks: {
+                fontColor: "white",
+                fontSize: 14,
+                stepSize: 1,
+                beginAtZero: true
+              }
+            }
+          ]
         }
-    }});
+      }
+    });
   } else {
-    var chart = new Chart(ctx).Bar(data, {
-      scaleOverride: true,
-      scaleSteps: 10,
-      scaleStepWidth: 10,
-      scaleStartValue: 0,
-      scaleShowVerticalLines: false
+
+    // var myLineChart = new Chart(ctx, {
+    //     type: 'line',
+    //     data: data,
+    //     options: options
+    // });
+
+    /* var myLineChart = new Chart(ctx, {
+    type: 'line',
+    data: data,
+    options: options
+});*/
+
+    // data =  {
+    //     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    //     datasets: [{
+    //         label: '# of Votes',
+    //         data: [12, 19, 3, 5, 2, 3],
+    //         backgroundColor: [
+    //             'rgba(255, 99, 132, 0.2)',
+    //             'rgba(54, 162, 235, 0.2)',
+    //             'rgba(255, 206, 86, 0.2)',
+    //             'rgba(75, 192, 192, 0.2)',
+    //             'rgba(153, 102, 255, 0.2)',
+    //             'rgba(255, 159, 64, 0.2)'
+    //         ],
+    //         borderColor: [
+    //             'rgba(255,99,132,1)',
+    //             'rgba(54, 162, 235, 1)',
+    //             'rgba(255, 206, 86, 1)',
+    //             'rgba(75, 192, 192, 1)',
+    //             'rgba(153, 102, 255, 1)',
+    //             'rgba(255, 159, 64, 1)'
+    //         ],
+    //         borderWidth: 1
+    //     }]
+    // }
+
+    var chart = new Chart(ctx, {
+      type: 'bar',
+      data: data,
+      options: {
+        legend: {
+           display: false
+        },
+        scaleShowValues: true,
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+                fontSize: 10,
+                max: 100,
+                         min: 0
+              }
+            }
+          ],
+          xAxes: [
+            {
+              ticks: {
+                autoSkip: false,
+                fontSize: 10
+              }
+            }
+          ]
+        }
+      }
     });
   }
 }
@@ -282,40 +348,40 @@ function readCombinedData() {
         buildPicker(factors[f]);
       }
 
-      data.forEach(function (persona) {
+      data.forEach(function(persona) {
 
-          var bigfive = persona.personality;
+        var bigfive = persona.personality;
 
-          bigfive.forEach(function (factor) {
+        bigfive.forEach(function(factor) {
 
-              switch (factor.name) {
+          switch (factor.name) {
 
-              case "Openness":
-                  process(persona, factor, openness);
-                  break;
+            case "Openness":
+              process(persona, factor, openness);
+              break;
 
-              case "Conscientiousness":
-                  process(persona, factor, conscientiousness);
-                  break;
+            case "Conscientiousness":
+              process(persona, factor, conscientiousness);
+              break;
 
-              case "Agreeableness":
-                  process(persona, factor, agreeableness);
-                  break;
+            case "Agreeableness":
+              process(persona, factor, agreeableness);
+              break;
 
-              case "Extraversion":
-                  process(persona, factor, extraversion);
-                  break;
+            case "Extraversion":
+              process(persona, factor, extraversion);
+              break;
 
-              case "Emotional range":
-                  process(persona, factor, neuroticism);
-                  break;
+            case "Emotional range":
+              process(persona, factor, neuroticism);
+              break;
 
-              }
-          });
+          }
+        });
 
-          console.log(data);
+        console.log(data);
 
-          personaCount++;
+        personaCount++;
       })
 
       drawCharts()

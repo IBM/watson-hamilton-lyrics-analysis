@@ -664,8 +664,8 @@
       width: 160px;
       height: 30px;
       align-self: center;
-      background: rgba(0, 0, 0, 0.1);
-      /* color: #ff9d00; */
+      /* background: rgba(0, 0, 0, 0.1); */
+      color: #F4512C;
       font-weight: bold;
       font-size: 12px;
       border: none;
