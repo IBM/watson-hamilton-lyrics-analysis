@@ -194,12 +194,15 @@
       height: 26px;
       padding: 10px;
     }
+
     /* - - - - - - - - - - - - - */
+
     /* entire container, keeps perspective */
 
     .flip-container {
       perspective: 1000;
     }
+
     /* flip the pane when hovered */
 
     .flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -210,6 +213,7 @@
       width: 320px;
       height: 480px;
     }
+
     /* flip speed goes here */
 
     .flipper {
@@ -217,6 +221,7 @@
       transform-style: preserve-3d;
       position: relative;
     }
+
     /* hide back of pane during swap */
 
     .front, .back {
@@ -225,6 +230,7 @@
       top: 0;
       left: 0;
     }
+
     /* front pane, placed above back */
 
     .front {
@@ -232,6 +238,7 @@
       /* for firefox 31 */
       transform: rotateY(0deg);
     }
+
     /* back, initially hidden pane */
 
     .back {
@@ -312,6 +319,7 @@
       -o-transition: opacity 1s ease-in-out;
       transition: opacity 1s ease-in-out;
     }
+
     /* - - - - - - - - - */
 
     .timeline {
@@ -480,6 +488,7 @@
     .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
       right: 0px;
     }
+
     /* charts */
 
     .charts {
@@ -499,11 +508,11 @@
       align-content: center;
       margin: 20px;
       margin-bottom: 100px;
-      /*background: rgba(0, 0, 0, 0.05);*/
+      background: white;
       border-radius: 10px;
       padding-bottom: 20px;
       padding-top: 10px;
-      /* border: 1px solid #ddd; */
+      border: 1px solid #ddd;
     }
 
     .chartIcon {
@@ -672,6 +681,7 @@
       padding-top: 20px;
       height: 110px;
     }
+
     /* ABOUT */
 
     .about {
