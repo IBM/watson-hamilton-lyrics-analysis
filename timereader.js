@@ -39,234 +39,234 @@ var songlist = [
   {
     "act": 1,
     "order": 1,
-    "title": "1-01 Alexander Hamilton.lrc",
-    "hamilton": ""
+    "file": "1-01 Alexander Hamilton.lrc",
+    "title": "Alexander Hamilton"
   }, {
     "act": 1,
     "order": 2,
-    "title": "1-02 Aaron Burr, Sir.lrc",
-    "hamilton": ""
+    "file": "1-02 Aaron Burr, Sir.lrc",
+    "title": "Aaron Burr, Sir"
   }, {
     "act": 1,
     "order": 3,
-    "title": "1-03 My Shot.lrc",
-    "hamilton": ""
+    "file": "1-03 My Shot.lrc",
+    "title": "My Shot"
   }, {
     "act": 1,
     "order": 4,
-    "title": "1-04 The Story of Tonight.lrc",
-    "hamilton": ""
+    "file": "1-04 The Story of Tonight.lrc",
+    "title": "The Story of Tonight"
   }, {
     "act": 1,
     "order": 5,
-    "title": "1-05 The Schuyler Sisters.lrc",
-    "hamilton": ""
+    "file": "1-05 The Schuyler Sisters.lrc",
+    "title": "The Schuyler Sisters"
   }, {
     "act": 1,
     "order": 6,
-    "title": "1-06 Farmer Refuted.lrc",
-    "hamilton": ""
+    "file": "1-06 Farmer Refuted.lrc",
+    "title": "Farmer Refuted"
   }, {
     "act": 1,
     "order": 7,
-    "title": "1-07 You'll Be Back.lrc",
-    "hamilton": ""
+    "file": "1-07 You'll Be Back.lrc",
+    "title": "You'll Be Back"
   }, {
     "act": 1,
     "order": 8,
-    "title": "1-08 Right Hand Man.lrc",
-    "hamilton": ""
+    "file": "1-08 Right Hand Man.lrc",
+    "title": "Right Hand Man"
   }, {
     "act": 1,
     "order": 9,
-    "title": "1-09 A Winter's Ball.lrc",
-    "hamilton": ""
+    "file": "1-09 A Winter's Ball.lrc",
+    "title": "A Winter's Ball"
   }, {
     "act": 1,
     "order": 10,
-    "title": "1-10 Helpless.lrc",
-    "hamilton": ""
+    "file": "1-10 Helpless.lrc",
+    "title": "Helpless"
   }, {
     "act": 1,
     "order": 11,
-    "title": "1-11 Satisfied.lrc",
-    "hamilton": ""
+    "file": "1-11 Satisfied.lrc",
+    "title": "Satisfied"
   }, {
     "act": 1,
     "order": 12,
-    "title": "1-12 The Story of Tonight (Reprise).lrc",
-    "hamilton": ""
+    "file": "1-12 The Story of Tonight (Reprise).lrc",
+    "title": "The Story of Tonight (Reprise)"
   }, {
     "act": 1,
     "order": 13,
-    "title": "1-13 Wait for it.lrc",
-    "hamilton": ""
+    "file": "1-13 Wait for it.lrc",
+    "title": "Wait for it"
   }, {
     "act": 1,
     "order": 14,
-    "title": "1-14 Stay Alive.lrc",
-    "hamilton": ""
+    "file": "1-14 Stay Alive.lrc",
+    "title": "Stay Alive"
   }, {
     "act": 1,
     "order": 15,
-    "title": "1-15 Ten Duel Commandments.lrc",
-    "hamilton": ""
+    "file": "1-15 Ten Duel Commandments.lrc",
+    "title": "Ten Duel Commandments"
   }, {
     "act": 1,
     "order": 16,
-    "title": "1-16 Meet Me Inside.lrc",
-    "hamilton": ""
+    "file": "1-16 Meet Me Inside.lrc",
+    "title": "Meet Me Inside"
   }, {
     "act": 1,
     "order": 17,
-    "title": "1-17 That Would Be Enough.lrc",
-    "hamilton": ""
+    "file": "1-17 That Would Be Enough.lrc",
+    "title": "That Would Be Enough"
   }, {
     "act": 1,
     "order": 18,
-    "title": "1-18 Guns and Ships.lrc",
-    "hamilton": ""
+    "file": "1-18 Guns and Ships.lrc",
+    "title": "Guns and Ships"
   }, {
     "act": 1,
     "order": 19,
-    "title": "1-19 History Has Its Eyes on You.lrc",
-    "hamilton": ""
+    "file": "1-19 History Has Its Eyes on You.lrc",
+    "title": "History Has Its Eyes on You"
   }, {
     "act": 1,
     "order": 20,
-    "title": "1-20 Yorktown (The World Turned Upside Down).lrc",
-    "hamilton": ""
+    "file": "1-20 Yorktown (The World Turned Upside Down).lrc",
+    "title": "Yorktown (The World Turned Upside Down)"
   }, {
     "act": 1,
     "order": 21,
-    "title": "1-21 What Comes Next.lrc",
-    "hamilton": ""
+    "file": "1-21 What Comes Next.lrc",
+    "title": "What Comes Next"
   }, {
     "act": 1,
     "order": 22,
-    "title": "1-22 Dear Theodosia.lrc",
-    "hamilton": ""
+    "file": "1-22 Dear Theodosia.lrc",
+    "title": "Dear Theodosia"
   }, {
     "act": 1,
     "order": 23,
-    "title": "1-23 Non-Stop.lrc",
-    "hamilton": ""
+    "file": "1-23 Non-Stop.lrc",
+    "title": "Non-Stop"
   }, {
     "act": 2,
     "order": 1,
-    "title": "2-01 What'd I Miss.lrc",
-    "hamilton": ""
+    "file": "2-01 What'd I Miss.lrc",
+    "title": "What'd I Miss"
   }, {
     "act": 2,
     "order": 2,
-    "title": "2-02 Cabinet Battle #1.lrc",
-    "hamilton": ""
+    "file": "2-02 Cabinet Battle #1.lrc",
+    "title": "Cabinet Battle #1"
   }, {
     "act": 2,
     "order": 3,
-    "title": "2-03 Take a Break.lrc",
-    "hamilton": ""
+    "file": "2-03 Take a Break.lrc",
+    "title": "Take a Break"
   }, {
     "act": 2,
     "order": 4,
-    "title": "2-04 Say No to This.lrc",
-    "hamilton": ""
+    "file": "2-04 Say No to This.lrc",
+    "title": "Say No to This"
   }, {
     "act": 2,
     "order": 5,
-    "title": "2-05 The Room Where It Happens.lrc",
-    "hamilton": ""
+    "file": "2-05 The Room Where It Happens.lrc",
+    "title": "The Room Where It Happens"
   }, {
     "act": 2,
     "order": 6,
-    "title": "2-06 Schuyler Defeated.lrc",
-    "hamilton": ""
+    "file": "2-06 Schuyler Defeated.lrc",
+    "title": "Schuyler Defeated"
   }, {
     "act": 2,
     "order": 7,
-    "title": "2-07 Cabinet Battle #2.lrc",
-    "hamilton": ""
+    "file": "2-07 Cabinet Battle #2.lrc",
+    "title": "Cabinet Battle #2"
   }, {
     "act": 2,
     "order": 8,
-    "title": "2-08 Washington on Your Side.lrc",
-    "hamilton": ""
+    "file": "2-08 Washington on Your Side.lrc",
+    "title": "Washington on Your Side"
   }, {
     "act": 2,
     "order": 9,
-    "title": "2-09 One Last Time.lrc",
-    "hamilton": ""
+    "file": "2-09 One Last Time.lrc",
+    "title": "One Last Time"
   }, {
     "act": 2,
     "order": 10,
-    "title": "2-10 I Know Him.lrc",
-    "hamilton": ""
+    "file": "2-10 I Know Him.lrc",
+    "title": "I Know Him"
   }, {
     "act": 2,
     "order": 11,
-    "title": "2-11 The Adams Administration.lrc",
-    "hamilton": ""
+    "file": "2-11 The Adams Administration.lrc",
+    "title": "The Adams Administration"
   }, {
     "act": 2,
     "order": 12,
-    "title": "2-12 We Know.lrc",
-    "hamilton": ""
+    "file": "2-12 We Know.lrc",
+    "title": "We Know"
   }, {
     "act": 2,
     "order": 13,
-    "title": "2-13 Hurricane.lrc",
-    "hamilton": ""
+    "file": "2-13 Hurricane.lrc",
+    "title": "Hurricane"
   }, {
     "act": 2,
     "order": 14,
-    "title": "2-14 The Reynolds Pamphlet.lrc",
-    "hamilton": ""
+    "file": "2-14 The Reynolds Pamphlet.lrc",
+    "title": "The Reynolds Pamphlet"
   }, {
     "act": 2,
     "order": 15,
-    "title": "2-15 Burn.lrc",
-    "hamilton": ""
+    "file": "2-15 Burn.lrc",
+    "title": "Burn"
   }, {
     "act": 2,
     "order": 16,
-    "title": "2-16 Blow Us All Away.lrc",
-    "hamilton": ""
+    "file": "2-16 Blow Us All Away.lrc",
+    "title": "Blow Us All Away"
   }, {
     "act": 2,
     "order": 17,
-    "title": "2-17 Stay Alive (reprise).lrc",
-    "hamilton": ""
+    "file": "2-17 Stay Alive (reprise).lrc",
+    "title": "Stay Alive (reprise)"
   }, {
     "act": 2,
     "order": 18,
-    "title": "2-18 It's Quiet Uptown.lrc",
-    "hamilton": ""
+    "file": "2-18 It's Quiet Uptown.lrc",
+    "title": "It's Quiet Uptown"
   }, {
     "act": 2,
     "order": 19,
-    "title": "2-19 The Election of 1800.lrc",
-    "hamilton": ""
+    "file": "2-19 The Election of 1800.lrc",
+    "title": "The Election of 1800"
   }, {
     "act": 2,
     "order": 20,
-    "title": "2-20 Your Obedient Servant.lrc",
-    "hamilton": ""
+    "file": "2-20 Your Obedient Servant.lrc",
+    "title": "Your Obedient Servant"
   }, {
     "act": 2,
     "order": 21,
-    "title": "2-21 Best of Wives and Best of Women.lrc",
-    "hamilton": ""
+    "file": "2-21 Best of Wives and Best of Women.lrc",
+    "title": "Best of Wives and Best of Women"
   }, {
     "act": 2,
     "order": 22,
-    "title": "2-22 The World Was Wild Enough.lrc",
-    "hamilton": ""
+    "file": "2-22 The World Was Wild Enough.lrc",
+    "title": "The World Was Wild Enough"
 
   }, {
     "act": 2,
     "order": 23,
-    "title": "2-23 Who Lives, Who Dies, Who Tells Your Story.lrc",
-    "hamilton": ""
+    "file": "2-23 Who Lives, Who Dies, Who Tells Your Story.lrc",
+    "title": "Who Lives, Who Dies, Who Tells Your Story"
   }
 ]
 
@@ -332,7 +332,7 @@ for (var song = 0; song < 2; song++) {
 
   var s = song;
 
-  lineReader.eachLine(path.join('lrc', songlist[song].title), function(line, last) {
+  lineReader.eachLine(path.join('lrc', songlist[song].file), function(line, last) {
 
     // console.log(song.title)
 
