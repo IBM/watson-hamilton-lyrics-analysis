@@ -9,6 +9,7 @@
     "cfenv": "1.0.x",
     "express": "4.15.x",
     "line-reader": "^0.4.0",
+    "path": "^0.12.7",
     "watson-developer-cloud": "^2.34.0"
   },
   "repository": {},
