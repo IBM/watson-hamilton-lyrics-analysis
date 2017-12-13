@@ -18,11 +18,7 @@ var personality_insights = new PersonalityInsightsV3({"username": pi.username, "
 
 var ta = config[1].tone_analyzer[0];
 
-var tone_analyzer = new ToneAnalyzerV3({
-  "username": ta.credentials.username,
-  "password": ta.credentials.password,
-  version_date: '2017-09-21'
-});
+var tone_analyzer = new ToneAnalyzerV3({"username": ta.credentials.username, "password": ta.credentials.password, version_date: '2017-09-21'});
 
 var index = 0;
 
@@ -327,12 +323,10 @@ function checkforCharacterChange(line) {
   return {change: CHANGE, character: CURRENTCHARACTER};
 }
 
-for (var song = 0; song < 2; song++) {
+for (var song = 0; song < songlist.length; song++) {
   // console.log(song)
 
-  var s = song;
-
-  lineReader.eachLine(path.join('lrc', songlist[song].file), function(line, last) {
+  lineReader.eachLine(path.join('lrc', songlist[song].file), function(line, last, song) {
 
     // console.log(song.title)
 
@@ -348,7 +342,7 @@ for (var song = 0; song < 2; song++) {
 
     if (last) {
 
-      console.log(songlist[s].title);
+      console.log(songlist[song].title);
       console.log('\n-----------------\n')
 
       /* if we've reached the last line, then we are ready to get Personality Insights
@@ -358,30 +352,43 @@ for (var song = 0; song < 2; song++) {
 
       /* recusrisvely call getPersonalityInsights for each character */
 
-      songlist[s].lines = lines['HAMILTON'];
+      songlist[song].lines = lines['HAMILTON'];
+
+      fs.writeFile("tonedata.json", JSON.stringify(songlist), function(err) {
+        if (err) {
+          return console.log(err);
+        }
+      })
 
       var params = {
         // Get the text from the JSON file.
-        text: songlist[s].lines,
+        text: songlist[song].lines,
         tones: 'emotion'
       };
 
-      tone_analyzer.tone(params, function(error, response) {
-        if (error)
-          console.log('error:', error);
-        else
-          console.log(JSON.stringify(response, null, 2));
-        }
-      );
+      // tone_analyzer.tone(params, function(error, response) {
+      //   if (error)
+      //     console.log('error:', error);
+      //   else
+      //
+      //     songlist[s].tone = response;
+      //
+      //
+      //
+      //   // console.log(JSON.stringify(response, null, 2));
+      // });
 
       // lines['HAMILTON'] = '';
 
-      console.log(songlist[s].lines)
+      // console.log(songlist[s].lines)
 
       // getPersonalityInsights()
     }
   });
 }
+
+
+
 
 // console.log(songlist);
 
