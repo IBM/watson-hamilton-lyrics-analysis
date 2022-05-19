@@ -15,7 +15,7 @@ When the reader has completed this journey, they will understand how to:
 
 ## Flow
 
-1.
+1. Step 1.
 2. Step 2.
 3. Step 3.
 4. Step 4.
@@ -49,7 +49,7 @@ Use the ``Deploy to Bluemix`` button **OR** create the services and run locally.
 1. Press the above ``Deploy to Bluemix`` button and then click on ``Deploy``.
 
 
-2. In Toolchains, click on Delivery Pipeline to watch while the app is deployed. Once deployed, the app can be viewed by clicking 'View app'.
+2. In ``Toolchains``, click on ``Delivery Pipeline`` to watch while the app is deployed. Once deployed, the app can be viewed by clicking ``View app``.
 ![](doc/source/images/toolchain-pipeline.png)
 
 
